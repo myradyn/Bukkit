@@ -220,6 +220,33 @@ public enum Material {
     QUARTZ_STAIRS(156, Stairs.class),
     ACTIVATOR_RAIL(157),
     DROPPER(158),
+    //@Propellermod
+    A_COAL(200),
+    A_REDSTONE(201),
+    A_SEEDS(202),
+    A_MELONSEEDS(203),
+    A_PUMPKINSEEDS(204),
+    A_WHEAT(205),
+    A_MELON(206),
+    A_PUMPKIN(207),
+    A_REED(208),
+    A_BONE(209),
+    A_GLOWSTONE(210),
+    A_GUNPOWDER(211),
+    A_ROTTENFLESH(212),
+    A_SILK(213),
+    A_BREAD(214),
+    A_EGG(215),
+    A_DYEPOWDER3(216),
+    A_COBBLESTONE(217),
+    A_DIRT(218),
+    A_GRAVEL(219),
+    A_SAND(220),
+    A_ARROW(221),
+    A_SANDSTONE(222),
+    A_NETHERRACK(223),
+    A_CARROTS(224),
+    A_POTATOES(225),
     // ----- Item Separator -----
     IRON_SPADE(256, 1, 250),
     IRON_PICKAXE(257, 1, 250),
@@ -733,6 +760,33 @@ public enum Material {
             case QUARTZ_BLOCK:
             case QUARTZ_STAIRS:
             case DROPPER:
+            //@Propellermod
+            case A_COAL:
+            case A_REDSTONE:
+            case A_SEEDS:
+            case A_MELONSEEDS:
+            case A_PUMPKINSEEDS:
+            case A_WHEAT:
+            case A_MELON:
+            case A_PUMPKIN:
+            case A_REED:
+            case A_BONE:
+            case A_GLOWSTONE:
+            case A_GUNPOWDER:
+            case A_ROTTENFLESH:
+            case A_SILK:
+            case A_BREAD:
+            case A_EGG:
+            case A_DYEPOWDER3:
+            case A_COBBLESTONE:
+            case A_DIRT:
+            case A_GRAVEL:
+            case A_SAND:
+            case A_ARROW:
+            case A_SANDSTONE:
+            case A_NETHERRACK:
+            case A_CARROTS:
+            case A_POTATOES:
                 return true;
             default:
                 return false;
@@ -839,6 +893,31 @@ public enum Material {
             case JUNGLE_WOOD_STAIRS:
             case TRAPPED_CHEST:
             case DAYLIGHT_DETECTOR:
+            //@Propellermod
+            case A_SEEDS:
+            case A_MELONSEEDS:
+            case A_PUMPKINSEEDS:
+            case A_WHEAT:
+            case A_MELON:
+            case A_PUMPKIN:
+            case A_REED:
+            case A_BONE:
+            case A_GLOWSTONE:
+            case A_GUNPOWDER:
+            case A_ROTTENFLESH:
+            case A_SILK:
+            case A_BREAD:
+            case A_EGG:
+            case A_DYEPOWDER3:
+            case A_COBBLESTONE:
+            case A_DIRT:
+            case A_GRAVEL:
+            case A_SAND:
+            case A_ARROW:
+            case A_SANDSTONE:
+            case A_NETHERRACK:
+            case A_CARROTS:
+            case A_POTATOES:
                 return true;
             default:
                 return false;
@@ -946,6 +1025,33 @@ public enum Material {
             case QUARTZ_ORE:
             case QUARTZ_BLOCK:
             case DROPPER:
+            //@Propellermod
+            case A_COAL:
+            case A_REDSTONE:
+            case A_SEEDS:
+            case A_MELONSEEDS:
+            case A_PUMPKINSEEDS:
+            case A_WHEAT:
+            case A_MELON:
+            case A_PUMPKIN:
+            case A_REED:
+            case A_BONE:
+            case A_GLOWSTONE:
+            case A_GUNPOWDER:
+            case A_ROTTENFLESH:
+            case A_SILK:
+            case A_BREAD:
+            case A_EGG:
+            case A_DYEPOWDER3:
+            case A_COBBLESTONE:
+            case A_DIRT:
+            case A_GRAVEL:
+            case A_SAND:
+            case A_ARROW:
+            case A_SANDSTONE:
+            case A_NETHERRACK:
+            case A_CARROTS:
+            case A_POTATOES:
                 return true;
             default:
                 return false;
