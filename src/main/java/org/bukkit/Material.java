@@ -222,7 +222,6 @@ public enum Material {
     DROPPER(158),
     //@Propellermod
     A_COAL(200),
-    A_REDSTONE(201),
     A_SEEDS(202),
     A_MELONSEEDS(203),
     A_PUMPKINSEEDS(204),
@@ -247,6 +246,7 @@ public enum Material {
     A_NETHERRACK(223),
     A_CARROTS(224),
     A_POTATOES(225),
+    A_CLAY(226),
     // ----- Item Separator -----
     IRON_SPADE(256, 1, 250),
     IRON_PICKAXE(257, 1, 250),
@@ -762,7 +762,6 @@ public enum Material {
             case DROPPER:
             //@Propellermod
             case A_COAL:
-            case A_REDSTONE:
             case A_SEEDS:
             case A_MELONSEEDS:
             case A_PUMPKINSEEDS:
@@ -787,6 +786,7 @@ public enum Material {
             case A_NETHERRACK:
             case A_CARROTS:
             case A_POTATOES:
+            case A_CLAY:
                 return true;
             default:
                 return false;
@@ -918,6 +918,7 @@ public enum Material {
             case A_NETHERRACK:
             case A_CARROTS:
             case A_POTATOES:
+            case A_CLAY:
                 return true;
             default:
                 return false;
@@ -1027,7 +1028,6 @@ public enum Material {
             case DROPPER:
             //@Propellermod
             case A_COAL:
-            case A_REDSTONE:
             case A_SEEDS:
             case A_MELONSEEDS:
             case A_PUMPKINSEEDS:
@@ -1052,6 +1052,7 @@ public enum Material {
             case A_NETHERRACK:
             case A_CARROTS:
             case A_POTATOES:
+            case A_CLAY:
                 return true;
             default:
                 return false;
