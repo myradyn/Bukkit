@@ -16,6 +16,7 @@ import org.bukkit.material.Command;
 import org.bukkit.material.Crops;
 import org.bukkit.material.DetectorRail;
 import org.bukkit.material.Diode;
+import org.bukkit.material.DirectionalContainer;
 import org.bukkit.material.Dispenser;
 import org.bukkit.material.Door;
 import org.bukkit.material.Dye;
@@ -220,7 +221,7 @@ public enum Material {
     QUARTZ_BLOCK(155),
     QUARTZ_STAIRS(156, Stairs.class),
     ACTIVATOR_RAIL(157),
-    DROPPER(158),
+    DROPPER(158, DirectionalContainer.class),
     //@Propellermod
     A_COAL(200),
     A_SEEDS(202),
@@ -1054,6 +1055,23 @@ public enum Material {
             case A_CARROTS:
             case A_POTATOES:
             case A_CLAY:
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    /**
+     * @return True if this material is affected by gravity.
+     */
+    public boolean hasGravity() {
+        if (!isBlock()) {
+            return false;
+        }
+        switch (this) {
+            case SAND:
+            case GRAVEL:
+            case ANVIL:
                 return true;
             default:
                 return false;

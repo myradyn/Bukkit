@@ -28,18 +28,18 @@ public class EntityDamageEvent extends EntityEvent implements Cancellable {
     }
 
     /**
-     * Gets the amount of damage caused by the Block
+     * Gets the amount of damage caused by the event
      *
-     * @return The amount of damage caused by the Block
+     * @return The amount of damage caused by the event
      */
     public int getDamage() {
         return damage;
     }
 
     /**
-     * Sets the amount of damage caused by the Block
+     * Sets the amount of damage caused by the event
      *
-     * @param damage The amount of damage caused by the Block
+     * @param damage The amount of damage caused by the event
      */
     public void setDamage(int damage) {
         this.damage = damage;
@@ -188,6 +188,12 @@ public class EntityDamageEvent extends EntityEvent implements Cancellable {
          * Damage: variable
          */
         FALLING_BLOCK,
+        /**
+         * Damage caused in retaliation to another attack by the Thorns enchantment.
+         * <p />
+         * Damage: 1-4 (Thorns)
+         */
+        THORNS,
         /**
          * Custom damage.
          * <p />
